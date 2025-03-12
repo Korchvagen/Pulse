@@ -1,13 +1,24 @@
 .promo {
   min-height: 650px;
   padding: 21px 20px 93px;
-  background: url('../../img/bg_main.jpg') center (center/cover) no-repeat;
+  background: url('../img/bg_main.jpg') left (center/cover) no-repeat;
+
+  @media screen and (max-width: 768px) {
+    min-height: 350px;
+    padding: 20px 20px 50px;
+    background-position: 25%
+  }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: end;
     margin-top: 90px;
+
+    @media screen and (max-width: 576px) {
+      margin-top: 50px;
+      align-items: center;
+    }
   }
 
   &__header {
@@ -15,6 +26,10 @@
     font-size: 42px;
     text-transform: uppercase;
     color: #fff;
+
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
   }
 
   &__subheader {
@@ -23,6 +38,11 @@
     font-size: 24px;
     text-transform: uppercase;
     color: #fff;
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 
   &__icons {
@@ -31,6 +51,11 @@
     width: 424px;
     margin-top: 60px;
 
+    @media screen and (max-width: 576px) {
+      width: 280px;
+      margin-top: 40px;
+      gap: 10px;
+    }
   }
 
   &__icon {
@@ -45,6 +70,11 @@
       margin: 0 auto;
       margin-bottom: 20px;
     }
+
+    @media screen and (max-width: 576px) {
+      width: calc(260px / 3);
+      font-size: 12px;
+    }
   }
 
   &__link {
@@ -58,6 +88,10 @@
       text-transform: uppercase;
       text-decoration-skip-ink: none;
       color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
     }
   }
 }
