@@ -1,18 +1,33 @@
 .advanteges {
   background-color: #F6F6F6;
-  padding: 70px 0 65px;
+  padding: 70px 20px 65px;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+  }
 
   &__header {
     font-weight: 700;
     font-size: 30px;
     text-align: center;
     color: #0d0d0d;
+
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      justify-content: center;
+      gap: 30px;
+    }
   }
 
   &__item {
