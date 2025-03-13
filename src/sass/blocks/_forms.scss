@@ -4,6 +4,11 @@
   flex-direction: column;
   width: 300px;
 
+  @media screen and (max-width: 360px) {
+    width: 260px;
+    margin: 36px auto 0;
+  }
+
   input {
     height: 50px;
     background-color: #fff;

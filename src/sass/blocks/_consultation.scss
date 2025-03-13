@@ -3,11 +3,24 @@
   padding: 100px 20px 108px;
   background: url('../img/bg.jpg') center (center / cover) no-repeat;
 
+  @media screen and (max-width: 768px) {
+    min-height: auto;
+    padding: 50px 20px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 16px;
+  }
+
   &__descr {
     margin-top: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     color: #fff;
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
   }
 }
