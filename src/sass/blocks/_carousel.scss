@@ -1,0 +1,75 @@
+.carousel {
+  padding: 81px 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+  }
+
+  &__inner {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 810px) {
+      width: 500px;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 280px;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    left: -96px;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #fff;
+
+    img {
+      width: 30px;
+      height: 50px;
+    }
+  }
+
+  .slick-next {
+    left: auto;
+    right: -96px;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+
+    button {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #c70101;
+      border: none;
+      border-radius: 100%;
+      color: #fff;
+      line-height: 28px;
+      cursor: pointer
+    }
+
+    @media screen and (max-width: 576px) {
+      column-gap: 10px;
+    }
+  }
+}
