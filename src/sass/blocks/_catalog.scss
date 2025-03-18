@@ -1,6 +1,10 @@
 .catalog {
   padding: 0 20px 80px;
 
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 50px;
+  }
+
   &__tabs {
     margin-top: 45px;
     list-style-type: none;
@@ -9,6 +13,11 @@
     align-items: center;
     gap: 10px;
     padding: 0;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      margin-top: 20px;
+    }
   }
 
   &__tab {
@@ -24,6 +33,20 @@
     transform: skewX(-25deg);
     cursor: pointer;
     transition: 0.5s all;
+
+    @media screen and (max-width: 768px) {
+      width: 160px;
+      height: 40px;
+      line-height: 38px;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 220px;
+      height: 50px;
+      line-height: 48px;
+      font-size: 18px;
+    }
 
     &:hover {
       box-shadow: 3px 3px 5px $main-color;
@@ -50,6 +73,15 @@
     &_active {
       display: flex;
     }
+
+    @media screen and (max-width: 675px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 576px) {
+      margin-top: 40px;
+    }
   }
 
   &-item {
@@ -58,6 +90,10 @@
     border: 2px solid #e8e8e8;
     padding: 20px;
     overflow: hidden;
+
+    @media screen and (max-width: 350px) {
+      width: 280px;
+    }
 
     &__wrapper {
       display: flex;
