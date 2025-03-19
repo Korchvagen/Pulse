@@ -44,9 +44,10 @@
     text-align: center;
     color: #fff;
     text-decoration: none;
+    transition: 0.3s all;
 
     &:hover {
-      color: #fff;
+      color: #cacaca;
     }
 
     @media screen and (max-width: 768px) {
@@ -75,9 +76,14 @@
     border: 2px solid #fff;
     border-radius: 100%;
     margin: 0 15px;
+    transition: 0.3s all;
 
     img {
       height: 27px;
+    }
+
+    &:hover {
+      scale: 1.05;
     }
   }
 }

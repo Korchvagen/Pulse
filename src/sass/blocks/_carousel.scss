@@ -31,6 +31,12 @@
     transform: translateY(-50%);
     border: none;
     background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &:hover {
+      scale: 1.05;
+    }
 
     img {
       width: 30px;
@@ -65,7 +71,12 @@
       border-radius: 100%;
       color: #fff;
       line-height: 28px;
-      cursor: pointer
+      cursor: pointer;
+      transition: 0.3s all;
+
+      &:hover {
+        scale: 1.1;
+      }
     }
 
     @media screen and (max-width: 576px) {

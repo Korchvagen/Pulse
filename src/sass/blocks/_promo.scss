@@ -88,6 +88,11 @@
       text-transform: uppercase;
       text-decoration-skip-ink: none;
       color: #fff;
+      transition: 0.3s all;
+
+      &:hover {
+        color: #cacaca;
+      }
     }
 
     @media screen and (max-width: 768px) {

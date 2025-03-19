@@ -9,6 +9,13 @@
   border-radius: 5px;
   background-color: $main-color;
   border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:hover {
+    scale: 1.05;
+    background-color: #b40000;
+  }
 
   @media screen and (max-width: 768px) {
     width: 130px;

@@ -148,6 +148,11 @@
       text-decoration-skip-ink: none;
       text-align: center;
       color: $main-color;
+      transition: 0.3s all;
+
+      &:hover {
+        color: #b40000;
+      }
     }
 
     hr {
