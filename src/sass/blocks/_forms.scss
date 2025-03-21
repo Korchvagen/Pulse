@@ -33,4 +33,21 @@
   &_mt25 {
     margin-top: 25px;
   }
+
+  input.error {
+    border: 1px solid $main-color;
+    margin-bottom: 5px;
+  }
+
+  label.error {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+#consultation-form.feed-form {
+  label.error {
+    color: #fff;
+  }
 }
