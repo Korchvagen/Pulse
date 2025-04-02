@@ -28,7 +28,7 @@ $(document).ready(function () {
       $(this).on('click', function (e) {
         e.preventDefault();
         $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-        $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+        $('.catalog-item__reverse').eq(i).toggleClass('catalog-item__reverse_active');
       });
     });
   }
@@ -109,7 +109,7 @@ $(document).ready(function () {
     }
   });
 
-  $("a[href^='#']").on('click', function (event) {
+  $("a[href='#up']").on('click', function (event) {
     const _href = $(this).attr('href');
 
     $('html, body').animate({
